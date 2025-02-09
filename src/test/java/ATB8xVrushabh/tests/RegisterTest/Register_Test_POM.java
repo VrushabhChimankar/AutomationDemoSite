@@ -15,6 +15,7 @@ public class Register_Test_POM extends CommonToAllTest {
     public void test_register_pom()
     {
 
+        System.out.println("Execution started");
         RegisterPage_POM register = new RegisterPage_POM(DriverManager.getDriver());
         register.regiter_demo_pom(PropertyReader.readKey("name"), PropertyReader.readKey("lname"), PropertyReader.readKey("address"), PropertyReader.readKey("email"), PropertyReader.readKey("phone"), PropertyReader.readKey("pass"), PropertyReader.readKey("cnf_pass"));
 
